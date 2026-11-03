@@ -172,3 +172,40 @@ body {
   color: var(--muted);
   word-break: break-all;
 }
+
+
+
+.password-wrap {
+  position: relative;
+}
+
+.field .password-wrap input {
+  padding-right: 2.75rem;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  display: flex;
+  padding: 0.3rem;
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  color: var(--primary);
+}
+
+.toggle-btn:focus-visible {
+  outline: 2px solid var(--primary);
+}
+
+/* hide the browser's own reveal icon so there aren't two */
+input::-ms-reveal {
+  display: none;
+}
